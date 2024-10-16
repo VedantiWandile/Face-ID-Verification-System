@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload ID Proof</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload Your ID Proof</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload ID Proof">
+    </form>
+    <a href="/capture_face">Capture Face Image</a>
+</body>
+</html>
